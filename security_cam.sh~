@@ -52,9 +52,9 @@
 	        git commit -m "Pictures" >/dev/null 2>/dev/null
 
    	        echo "Pushing changes" 
-		git push -q --force --set-upstream origin master #>/dev/null 2>/dev/null
+		git push -q --force --set-upstream origin master >/dev/null 2>/dev/null
 
- 	        read -p "Press [Enter] key to start backup..."
+# 	        read -p "Press [Enter] key to start backup..."
 
 		my_pic=$(ls *.jpg | sort -r | head -1)
 		echo "Sending e-mail" $my_pic
