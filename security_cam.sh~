@@ -52,7 +52,7 @@
 	        git commit -m "Pictures" >/dev/null 2>/dev/null
 
    	        echo "Pushing changes" 
-		git push --force --set-upstream origin master #>/dev/null 2>/dev/null
+		git push -q --force --set-upstream origin master #>/dev/null 2>/dev/null
 
  	        read -p "Press [Enter] key to start backup..."
 
