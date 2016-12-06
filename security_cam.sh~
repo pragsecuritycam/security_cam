@@ -18,6 +18,8 @@
 	    echo "Copying files"
 	    find /home/paulo/.motion/motion-images/ -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp '{}' ./ \;
 
+	    sleep 1	
+
 	    numfiles2=$(ls -1 --file-type | grep -v '/$' | wc -l)
 	    echo "Number of files after copying:" $numfiles2
 
@@ -60,6 +62,5 @@
 	    fi	    
 	    
             echo ""
-
-    	    sleep 1
+    	    
         done
